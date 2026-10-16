@@ -1,0 +1,4 @@
+country,venues,group_matches,knockout_matches,total_matches,venue_share_pct,match_share_pct,knockout_share_pct,matches_per_venue,allocation_index
+Canada,2,10,3,13,12.5,12.5,9.375,6.5,1.0
+Mexico,3,10,3,13,18.75,12.5,9.375,4.333333333333333,0.6666666666666666
+United States,11,52,26,78,68.75,75.0,81.25,7.090909090909091,1.0909090909090908

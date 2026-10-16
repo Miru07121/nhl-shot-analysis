@@ -1,0 +1,16 @@
+{
+  "teams": 32,
+  "pearson_xg60_goals60": 0.4709484406654119,
+  "league_goals": 5230.0,
+  "league_xg": 5420.72,
+  "largest_positive_gap": {
+    "team": "BUF",
+    "gap_per_60": 0.387322506341663,
+    "goals_above_expected": 25.830000000000013
+  },
+  "largest_negative_gap": {
+    "team": "NSH",
+    "gap_per_60": -0.5517900078485438,
+    "goals_above_expected": -36.91
+  }
+}

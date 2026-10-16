@@ -77,3 +77,12 @@ MoneyPuck describes this data as free for non-commercial use and requests attrib
 - `results/summary.json`: correlations and source hash.
 - `results/volume_vs_quality.png`: scatterplot.
 - `requirements.txt`: Python dependencies.
+
+## More portfolio projects
+
+| Project | Question | Main finding |
+|---|---|---|
+| [NHL finishing](projects/nhl-finishing/) | Who scored above or below expected goals? | Goals/60 vs. xG/60: r = 0.471; Buffalo led the positive residuals per 60. |
+| [World Cup host allocation](projects/world-cup-host-allocation/) | How were matches distributed among countries and cities? | U.S.: 75% of matches and 81.25% of knockout matches; Vancouver: 7 matches. |
+
+Each includes a runnable Python analysis, notebook, CSV results, source documentation, and a chart.
