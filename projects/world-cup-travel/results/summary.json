@@ -1,0 +1,25 @@
+{
+  "scenario": "hypothetical city visits; no match-date constraints",
+  "routes_evaluated": 24,
+  "baseline_route": [
+    "Vancouver",
+    "Houston",
+    "Seattle",
+    "Dallas",
+    "Los Angeles",
+    "Toronto"
+  ],
+  "shortest_route": [
+    "Vancouver",
+    "Seattle",
+    "Los Angeles",
+    "Dallas",
+    "Houston",
+    "Toronto"
+  ],
+  "baseline_km": 14413.781185193267,
+  "shortest_km": 6187.463236218104,
+  "distance_reduction_km": 8226.317948975164,
+  "distance_reduction_pct": 57.072587985626896,
+  "median_route_km": 10868.73225235142
+}

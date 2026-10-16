@@ -1,0 +1,10 @@
+scenario,country,matches,staff_shifts,staff_hours,labor_cost_cad
+base,Canada,13,8200,65600,1968000
+base,Mexico,13,8200,65600,1968000
+base,United States,78,53300,426400,12792000
+high,Canada,13,9840,78720,2361600
+high,Mexico,13,9840,78720,2361600
+high,United States,78,63960,511680,15350400
+low,Canada,13,6560,52480,1574400
+low,Mexico,13,6560,52480,1574400
+low,United States,78,42640,341120,10233600

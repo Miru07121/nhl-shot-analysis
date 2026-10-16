@@ -86,3 +86,12 @@ MoneyPuck describes this data as free for non-commercial use and requests attrib
 | [World Cup host allocation](projects/world-cup-host-allocation/) | How were matches distributed among countries and cities? | U.S.: 75% of matches and 81.25% of knockout matches; Vancouver: 7 matches. |
 
 Each includes a runnable Python analysis, notebook, CSV results, source documentation, and a chart.
+
+### World Cup planning projects
+
+| Project | Skills | Scenario result |
+|---|---|---|
+| [Host-city travel optimization](projects/world-cup-travel/) | Geospatial calculations, permutation search | Shortest of 24 hypothetical orders: 6,187 km. |
+| [Staffing scenarios with SQL](projects/world-cup-staffing/) | SQLite, joins, CTEs, window functions, sensitivity | Base assumptions produce CAD 16.728 million in modeled labor cost. |
+
+These are illustrative planning exercises, not actual travel or spending reports.

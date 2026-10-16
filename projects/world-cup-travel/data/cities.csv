@@ -1,0 +1,7 @@
+city,geonameid,country_code,admin1,latitude,longitude,source_url,retrieved_date
+Vancouver,6173331,CA,02,49.24966,-123.11934,https://download.geonames.org/export/dump/cities15000.zip,2026-10-16
+Toronto,6167865,CA,08,43.70643,-79.39864,https://download.geonames.org/export/dump/cities15000.zip,2026-10-16
+Seattle,5809844,US,WA,47.60621,-122.33207,https://download.geonames.org/export/dump/cities15000.zip,2026-10-16
+Los Angeles,5368361,US,CA,34.05223,-118.24368,https://download.geonames.org/export/dump/cities15000.zip,2026-10-16
+Dallas,4684888,US,TX,32.78306,-96.80667,https://download.geonames.org/export/dump/cities15000.zip,2026-10-16
+Houston,4699066,US,TX,29.76328,-95.36327,https://download.geonames.org/export/dump/cities15000.zip,2026-10-16

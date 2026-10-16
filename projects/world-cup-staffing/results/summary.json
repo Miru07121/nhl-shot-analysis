@@ -1,0 +1,12 @@
+{
+  "basis": "illustrative staffing assumptions, not actual costs",
+  "scenario_totals_cad": {
+    "base": 16728000,
+    "high": 20073600,
+    "low": 13382400
+  },
+  "base_vancouver_cad": 1080000.0,
+  "base_vancouver_staff_hours": 36000.0,
+  "highest_base_cost_city": "Dallas",
+  "highest_base_cost_cad": 1536000.0
+}

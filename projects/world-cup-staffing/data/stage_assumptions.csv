@@ -1,0 +1,8 @@
+stage,staff_per_match,hours_per_shift,hourly_rate_cad
+group,600,8,30
+round32,700,8,30
+round16,800,8,30
+quarterfinal,1000,8,30
+semifinal,1200,8,30
+third_place,1000,8,30
+final,1500,8,30

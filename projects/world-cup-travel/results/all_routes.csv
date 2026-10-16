@@ -1,0 +1,25 @@
+route,distance_km
+Vancouver → Seattle → Los Angeles → Dallas → Houston → Toronto,6187.463236218104
+Vancouver → Seattle → Los Angeles → Houston → Dallas → Toronto,6245.47226823478
+Vancouver → Los Angeles → Seattle → Dallas → Houston → Toronto,8443.732244316234
+Vancouver → Los Angeles → Seattle → Houston → Dallas → Toronto,8624.448047619922
+Vancouver → Seattle → Dallas → Houston → Los Angeles → Toronto,8957.02000605507
+Vancouver → Seattle → Houston → Dallas → Los Angeles → Toronto,9079.726777342083
+Vancouver → Seattle → Dallas → Los Angeles → Houston → Toronto,9188.3983701546
+Vancouver → Seattle → Houston → Los Angeles → Dallas → Toronto,9369.114173458289
+Vancouver → Dallas → Houston → Los Angeles → Seattle → Toronto,10278.761947975616
+Vancouver → Los Angeles → Houston → Dallas → Seattle → Toronto,10330.150915132906
+Vancouver → Houston → Dallas → Los Angeles → Seattle → Toronto,10407.001180949466
+Vancouver → Los Angeles → Dallas → Houston → Seattle → Toronto,10452.857686419919
+Vancouver → Dallas → Houston → Seattle → Los Angeles → Toronto,11284.606818282922
+Vancouver → Houston → Dallas → Seattle → Los Angeles → Toronto,11290.13927996976
+Vancouver → Dallas → Seattle → Los Angeles → Houston → Toronto,11393.278411095438
+Vancouver → Dallas → Los Angeles → Seattle → Houston → Toronto,11515.985182382452
+Vancouver → Los Angeles → Dallas → Seattle → Houston → Toronto,11567.374149539743
+Vancouver → Houston → Los Angeles → Seattle → Dallas → Toronto,11579.526676085969
+Vancouver → Los Angeles → Houston → Seattle → Dallas → Toronto,11625.383181556419
+Vancouver → Houston → Seattle → Los Angeles → Dallas → Toronto,11702.23344737298
+Vancouver → Dallas → Los Angeles → Houston → Seattle → Toronto,13402.403853199125
+Vancouver → Houston → Los Angeles → Dallas → Seattle → Toronto,13407.936314885965
+Vancouver → Dallas → Seattle → Houston → Los Angeles → Toronto,14285.541952219417
+Vancouver → Houston → Seattle → Dallas → Los Angeles → Toronto,14413.781185193267
