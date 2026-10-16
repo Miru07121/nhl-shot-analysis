@@ -1,0 +1,10 @@
+{
+  "season": "2024-25",
+  "scope": "regular season, 5-on-5",
+  "teams": 32,
+  "pearson_r": -0.029870698121901344,
+  "spearman_r": -0.020161290322580645,
+  "leave_one_team_out_min": -0.07059621361857876,
+  "leave_one_team_out_max": 0.01818715732585575,
+  "source_sha256": "c56d1b1fd36288b4b4751ef2c51c05813efe2011aa8d5c17db11556956cff5b1"
+}
