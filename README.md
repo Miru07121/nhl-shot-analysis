@@ -95,3 +95,19 @@ Each includes a runnable Python analysis, notebook, CSV results, source document
 | [Staffing scenarios with SQL](projects/world-cup-staffing/) | SQLite, joins, CTEs, window functions, sensitivity | Base assumptions produce CAD 16.728 million in modeled labor cost. |
 
 These are illustrative planning exercises, not actual travel or spending reports.
+
+## Automated checks
+
+Run `python -m unittest discover -s tests -v`. The tests cover the fixed
+32-team cohort, situation filtering, duplicate/missing records, finite numeric
+inputs, positive denominators, the rate identity, and the bundled season's
+correlation. GitHub Actions runs the same offline checks on pushes and pull
+requests after installing dependencies.
+
+`calculate_metrics(raw)` returns a new DataFrame without writing files. Source
+validation raises `ValueError`, including when Python is run with `-O`;
+only the internal arithmetic identity remains an assertion. The cohort remains
+fixed to the 2024 season code and 5-on-5 situation. These checks validate the
+implementation, not the accuracy of the source expected-goal model.
+
+
