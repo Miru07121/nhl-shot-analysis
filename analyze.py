@@ -10,23 +10,36 @@ import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parent
 
-def main():
-    source = ROOT / 'data/teams_2024.csv'
-    raw = pd.read_csv(source)
+def calculate_metrics(raw):
+    """Validate the fixed 32-team cohort and return metrics without file writes."""
     cols = ['team', 'season', 'situation', 'iceTime',
             'unblockedShotAttemptsFor', 'xGoalsFor']
-    assert set(cols).issubset(raw.columns), 'Required columns missing'
+    if not set(cols).issubset(raw.columns):
+        raise ValueError('Required columns missing')
     df = raw.loc[raw.situation.eq('5on5'), cols].copy()
-    assert len(df) == 32 and df.team.is_unique
-    assert df.season.eq(2024).all()
-    assert not df.isna().any().any()
-    assert df.iceTime.gt(0).all()
-    assert df.unblockedShotAttemptsFor.gt(0).all()
-    assert df.xGoalsFor.between(0, df.unblockedShotAttemptsFor).all()
+    if len(df) != 32 or not df.team.is_unique or df.isna().any().any():
+        raise ValueError('Expected 32 unique, complete team records')
+    numeric = ['season', 'iceTime', 'unblockedShotAttemptsFor', 'xGoalsFor']
+    if any(not pd.api.types.is_numeric_dtype(df[c]) or pd.api.types.is_bool_dtype(df[c]) for c in numeric):
+        raise ValueError('Metrics must be finite numeric values')
+    if not np.isfinite(df[numeric].to_numpy()).all():
+        raise ValueError('Metrics must be finite numeric values')
+    if not df.season.eq(2024).all():
+        raise ValueError('Expected season 2024')
+    if not df.iceTime.gt(0).all() or not df.unblockedShotAttemptsFor.gt(0).all():
+        raise ValueError('Time and attempt denominators must be positive')
+    if not df.xGoalsFor.between(0, df.unblockedShotAttemptsFor).all():
+        raise ValueError('Expected goals must be between zero and attempts')
     df['attempts_per_60'] = df.unblockedShotAttemptsFor / df.iceTime * 3600
     df['xg_per_attempt'] = df.xGoalsFor / df.unblockedShotAttemptsFor
     df['xg_per_60'] = df.xGoalsFor / df.iceTime * 3600
     assert np.allclose(df.attempts_per_60 * df.xg_per_attempt, df.xg_per_60)
+    return df
+
+
+def main():
+    source = ROOT / 'data/teams_2024.csv'
+    df = calculate_metrics(pd.read_csv(source))
     x, y = df.attempts_per_60, df.xg_per_attempt
     loo = [x.drop(i).corr(y.drop(i)) for i in df.index]
     summary = {
@@ -63,3 +76,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
